@@ -26,7 +26,20 @@ form.addEventListener("submit", (e) => {
         console.log(error);
     })
 
+    // Set Local Storage 
+    localStorage.setItem('city',userCity);
+
 });
+
+// fetching Local storage 
+
+if(localStorage.getItem('city')){
+    getCityData(localStorage.getItem('city')).then((data) => {
+        return updateUI(data);
+    }).catch((error) => {
+        console.log(error);
+    })
+}
 
 const updateUI = (data) => {
     const { cityDetails, weatherDetails, openweatherdetails, TimeDate } = data

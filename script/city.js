@@ -2,13 +2,13 @@ const key = "AyWMx25uXFnbN7GZ681kEmUQbbLyzgW2";
 const openkey = "ed3940f963ff4fb918275973ee72de8f";
 
 const getCity = async (city) => {
-    const request = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`);
+    const request = await fetch(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`);
     const data = await request.json();
     return data[0];
 }
 
 const getWeather = async (cityId) => {
-    const request = await fetch(`http://dataservice.accuweather.com/currentconditions/v1/${cityId}?apikey=${key}`)
+    const request = await fetch(`https://dataservice.accuweather.com/currentconditions/v1/${cityId}?apikey=${key}`)
     const data = await request.json();
     return data[0];
 }
