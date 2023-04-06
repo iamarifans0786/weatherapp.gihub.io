@@ -1,0 +1,13 @@
+font-family: 'IM Fell Great Primer', serif;
+font-family: 'Nosifer', cursive;
+font-family: 'Noto Sans Symbols 2', sans-serif;
+
+
+
+Acu Weather Api Key - AyWMx25uXFnbN7GZ681kEmUQbbL*****
+http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}
+http://dataservice.accuweather.com/currentconditions/v1/${cityId}?apikey=${key}
+
+
+open Weather Api Key - ed3940f963ff4fb918275973ee7*****
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}

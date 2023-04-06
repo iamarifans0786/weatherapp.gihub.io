@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- section - 1 form section  -->
+    <div class="main-container">
+        <section id="section-1">
+            <div class="container">
+                <form action="#">
+                    <h1>Write City Name Here</h1>
+                    <p><i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" name="cityName"><label>Location</label>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- section - 2 details section  -->
+        <section id="section-2">
+            <div class="container">
+                <div class="background-img">
+                    <img src="./image/night.jpg" alt="pic">
+                </div>
+                <div class="deatil-box">
+                    <div class="detail-sub-box-1">
+                        <div class="date-time">
+                            <h1>Renukoot</h1>
+                            <h2>Friday</h2>
+                            <h3> March 31, 2023 </h3>
+                            <h4>01:36</h4>
+                        </div>
+                        <div class="weather-status">
+                            <h1>Weather Status</h1>
+                            <img src="./image/icons/11.svg" alt="icon">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detail-sub-box-2">
+                        <div class="tempreture">
+                            <h1>Temperature</h1>
+                            <div class="tempreture-detail">
+                                <h1>0 <span> &#8451;</span></h1> <br>
+                                <h1>32 <span> &#8457;</span></h1>
+                            </div>
+                        </div> <hr id="vertical">
+                        <div class="wind-detail">
+                            <p>Wind Speed <span> 0 </span>Meter/Sec </p>
+                            <p>Humidity <span> 0 </span>% </p>
+                            <p>Pressure <span> 0 </span>hPa </p>
+                            <p>Max Temp <span> 0 </span>Kelvin </p>
+                            <p>Min Temp <span> 0 </span>Kelvin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./script/city.js"></script>
+    <script src="./script/weather.js"></script>
+</body>
+
+</html>
